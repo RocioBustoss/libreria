@@ -14,5 +14,11 @@ public class ProductoRepository {
     public List<Producto> leerProductos() {
         return listaProductos;
     }
+
+    public Producto agregarProducto(Producto p) {
+        listaProductos.add(p);
+        return p;
+        
+    }
     
 }

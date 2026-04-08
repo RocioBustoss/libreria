@@ -16,4 +16,9 @@ public class ProductoService {
         return productoRepository.leerProductos();
     }
     
+    public Producto crearProducto(Producto p) {
+        return productoRepository.agregarProducto(p);
+    }
+
+    
 }
