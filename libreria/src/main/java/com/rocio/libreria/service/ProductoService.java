@@ -20,5 +20,10 @@ public class ProductoService {
         return productoRepository.agregarProducto(p);
     }
 
+    public String eliminarProducto(String nombre) {
+        return productoRepository.quitarProducto(nombre);
+        
+    }
+
     
 }

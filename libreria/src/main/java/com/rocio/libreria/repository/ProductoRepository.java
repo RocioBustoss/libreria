@@ -20,5 +20,16 @@ public class ProductoRepository {
         return p;
         
     }
+
+    public String quitarProducto(String nombre) {
+        for (Producto producto : listaProductos) {
+            if(producto.getNombre().equalsIgnoreCase(nombre)){
+                listaProductos.remove(producto);
+                return nombre+" Eliminado";
+            }
+            
+        }
+        return nombre+" No encontrado";
+    }
     
 }
